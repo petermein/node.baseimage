@@ -1,0 +1,11 @@
+
+# Node Baseimage
+node-baseimage:
+  container_name: node-baseimage
+  build: .
+  dockerfile: Dockerfile
+  ports:
+    - '8000:8000'
+  environment:
+    - NODE_ENV=production
+    - TERM=xterm
